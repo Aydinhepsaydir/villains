@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 
-export default function VillainDisplayDetails({villains}) {
+export default function VillainDisplayDetails(props) {
+  console.log(props.villains);
   return (
     <div>
-      {villains.villains.map(villain => (
-        <div className="villainCard">
-          <p>Villain Name: {villain.name}</p>
-          <p>Superpower: {villain.superpower}</p>
+      {props.villains.map(villain => (
+        <div className="villainCard" key={villain.name + villain.superpower}>
+          <p>Evil Person: </p>
+          <li>{villain.name}</li>
+          <li>{villain.superpower}</li>
         </div>
       ))}
     </div>

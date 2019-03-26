@@ -1,5 +1,6 @@
 .App {
-  text-align: left;
+  text-align: center;
+  margin: 20px;
 }
 
 .App-logo {
@@ -25,14 +26,15 @@
 
 .villainForm {
   text-align: center;
-  margin: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
   padding: 15px;
   width: 50%;
   border: black solid 1px;
 }
 
-button {
-  margin: 20px;
+.inputField {
+  margin-bottom: 16px;
 }
 
 @keyframes App-logo-spin {
