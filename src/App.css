@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -21,6 +21,18 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.villainForm {
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  width: 50%;
+  border: black solid 1px;
+}
+
+button {
+  margin: 20px;
 }
 
 @keyframes App-logo-spin {

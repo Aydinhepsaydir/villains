@@ -1,25 +1,29 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import VillainForm from "./VillainForm";
+import VillainDisplayDetails from "./VillainDisplayDetails";
+import "./App.css";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      villains: [
+        {
+          villain: {
+            name: "hello",
+            superpower: "yes"
+          }
+        }
+      ]
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <VillainForm onVillainName={villain => console.log(villain)} />
+        <VillainDisplayDetails villains={this.state} />
       </div>
     );
   }
